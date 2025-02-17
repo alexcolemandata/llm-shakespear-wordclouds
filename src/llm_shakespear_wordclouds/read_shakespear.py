@@ -70,7 +70,6 @@ def read() -> Works:
                     parsing_state = ParsingState.DONE
 
                 if (stripline in titles) or (parsing_state == ParsingState.DONE):
-                    print(f"Parsed {title}, {len(text)} lines")
                     work = Work(title=title, text=text)
                     works.append(work)
 

@@ -1,14 +1,8 @@
-from llm_shakespear_wordclouds.read_shakespear import (
-    read,
-    pick_longest_lines_for_each_title,
-    Works,
-)
+from llm_shakespear_wordclouds import embedding
 
 
 def main() -> None:
-    works: Works = pick_longest_lines_for_each_title(read())
-    for work in works:
-        print(f"{work.title}, {len(work.text)} lines")
+    embedding.main()
 
 
 if __name__ == "__main__":
