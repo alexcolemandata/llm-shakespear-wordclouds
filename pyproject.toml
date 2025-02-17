@@ -1,0 +1,17 @@
+[project]
+name = "llm-shakespear-wordclouds"
+version = "0.1.0"
+description = "Generate wordclouds using LLM for thematic colouring/categorization"
+readme = "README.md"
+authors = [
+    { name = "alexcolemandata", email = "coleman.g.alex@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+llm-shakespear-wordclouds = "llm_shakespear_wordclouds:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
