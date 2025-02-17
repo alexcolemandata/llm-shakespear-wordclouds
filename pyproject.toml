@@ -15,3 +15,13 @@ llm-shakespear-wordclouds = "llm_shakespear_wordclouds:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.27.1",
+    "ipdb>=0.13.13",
+    "ipython>=8.32.0",
+    "pdbpp>=0.10.3",
+    "pytest>=8.3.4",
+    "ruff>=0.9.6",
+]
